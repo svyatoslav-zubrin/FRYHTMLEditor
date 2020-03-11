@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FRYHTMLEditor_Example' do
+  pod 'FRYHTMLEditor', :path => '../'
+
+  target 'FRYHTMLEditor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
