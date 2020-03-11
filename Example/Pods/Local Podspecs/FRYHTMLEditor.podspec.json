@@ -1,0 +1,22 @@
+{
+  "name": "FRYHTMLEditor",
+  "version": "0.1.0",
+  "summary": "A short description of FRYHTMLEditor.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/svyatoslav-zubrin/FRYHTMLEditor",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "svyatoslav-zubrin": "szubrin79@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/svyatoslav-zubrin/FRYHTMLEditor.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FRYHTMLEditor/Classes/**/*"
+}

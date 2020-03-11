@@ -1,0 +1,6 @@
+framework module FRYHTMLEditor {
+  umbrella header "FRYHTMLEditor-umbrella.h"
+
+  export *
+  module * { export * }
+}

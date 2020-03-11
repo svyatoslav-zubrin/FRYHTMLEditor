@@ -1,0 +1,6 @@
+framework module Pods_FRYHTMLEditor_Tests {
+  umbrella header "Pods-FRYHTMLEditor_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
