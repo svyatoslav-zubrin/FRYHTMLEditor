@@ -5,6 +5,19 @@
 [![License](https://img.shields.io/cocoapods/l/FRYHTMLEditor.svg?style=flat)](https://cocoapods.org/pods/FRYHTMLEditor)
 [![Platform](https://img.shields.io/cocoapods/p/FRYHTMLEditor.svg?style=flat)](https://cocoapods.org/pods/FRYHTMLEditor)
 
+## Description
+
+The **very basic** HTML editor for iOS. Uses WKWebView undr the hood.
+
+Frankly speaking it's the rewritten to swift and simplified version of [ZSSRichTextEditor](https://github.com/nnhubbard/ZSSRichTextEditor). The functionality is currently limited to:
+
+* bold
+* italic
+* underline
+* ordered list
+* unordered list
+* links
+
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
