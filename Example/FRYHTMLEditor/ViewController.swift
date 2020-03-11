@@ -119,6 +119,7 @@ class ViewController: UIViewController {
         self.editor.set(css: css)
 
         self.editor.toolbarDelegate = self
+        self.editor.contentDelegate = self
     }
 }
 
@@ -126,5 +127,12 @@ extension ViewController: HTMLEditorToolbarDelegate {
 
     func selectedTagsUpdated(_ tags: [HTMLEditorView.Tag]) {
         print("selected tags: \(tags)")
+    }
+}
+
+extension ViewController: HTMLEditorContentDelegate {
+
+    func contentUpdated(_ html: String) {
+        print(html)
     }
 }

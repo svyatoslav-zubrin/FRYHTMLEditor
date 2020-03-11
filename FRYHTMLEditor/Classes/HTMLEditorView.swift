@@ -9,12 +9,17 @@
 import UIKit
 import WebKit
 
+public protocol HTMLEditorContentDelegate: class {
+    func contentUpdated(_ html: String)
+}
+
 public protocol HTMLEditorToolbarDelegate: class {
     func selectedTagsUpdated(_ tags: [HTMLEditorView.Tag])
 }
 
 public class HTMLEditorView: UIView {
 
+    public weak var contentDelegate: HTMLEditorContentDelegate? = nil
     public weak var toolbarDelegate: HTMLEditorToolbarDelegate? = nil
 
     public enum HTMLEditorError: Error {
@@ -59,6 +64,7 @@ public class HTMLEditorView: UIView {
         config.dataDetectorTypes = []
 
         let contentController = WKUserContentController()
+        contentController.add(self, name: "jsm")
         let scriptString = "var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);"
         let script = WKUserScript(source: scriptString, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         contentController.addUserScript(script)
@@ -116,7 +122,9 @@ public class HTMLEditorView: UIView {
     public func insert(html: String) {
         let cleanedHTML = removeQuotes(from: html)
         let js = "zss_editor.insertHTML(\"\(cleanedHTML)\");"
-        webView.evaluateJavaScript(js, completionHandler: nil)
+        webView.evaluateJavaScript(js) { [weak self] (_, _) in
+            self?.informContentDelegate()
+        }
     }
 
     /// Fetches HTML from the editor
@@ -198,7 +206,9 @@ public class HTMLEditorView: UIView {
         case .link:         trigger = "zss_editor.prepareInsert();"
         }
 
-        webView.evaluateJavaScript(trigger, completionHandler: nil)
+        webView.evaluateJavaScript(trigger) { [weak self] (_, _) in
+            self?.informContentDelegate()
+        }
 
         if tag == .link {
             showInsertLinkDialog(url: selectedLinkURLString, title: selectedLinkTitle)
@@ -255,7 +265,9 @@ public class HTMLEditorView: UIView {
 
         let cleanedHTML = removeQuotes(from: html)
         let js = "zss_editor.setHTML(\"\(cleanedHTML)\");"
-        webView.evaluateJavaScript(js, completionHandler: nil)
+        webView.evaluateJavaScript(js) { [weak self] (_, _) in
+            self?.informContentDelegate()
+        }
     }
 
     // MARK: Link-related routines
@@ -333,17 +345,23 @@ public class HTMLEditorView: UIView {
 
     private func insertLink(url: URL, title: String?) {
         let trigger = "zss_editor.insertLink(\"\(url.absoluteString)\", \"\(title ?? "")\");"
-        webView.evaluateJavaScript(trigger, completionHandler: nil)
+        webView.evaluateJavaScript(trigger) { [weak self] (_, _) in
+            self?.informContentDelegate()
+        }
     }
 
     private func updateLink(url: URL, title: String?) {
         let trigger = "zss_editor.updateLink(\"\(url.absoluteString)\", \"\(title ?? "")\");"
-        webView.evaluateJavaScript(trigger, completionHandler: nil)
+        webView.evaluateJavaScript(trigger) { [weak self] (_, _) in
+            self?.informContentDelegate()
+        }
     }
 
     private func removeLink() {
         let trigger = "zss_editor.unlink();"
-        webView.evaluateJavaScript(trigger, completionHandler: nil)
+        webView.evaluateJavaScript(trigger) { [weak self] (_, _) in
+            self?.informContentDelegate()
+        }
     }
 
     // MARK: HTML Helpers
@@ -396,6 +414,30 @@ public class HTMLEditorView: UIView {
         self.selectedLinkTitle = foundLinkTitle
 
         toolbarDelegate?.selectedTagsUpdated(selectedTagsInfo.map({ $0.tag }))
+    }
+
+    // MARK: Helpers
+
+    private func informContentDelegate() {
+        guard let contentDelegate = contentDelegate else { return }
+
+        fetchHTML { (result) in
+            guard case let .success(html) = result else { return }
+            contentDelegate.contentUpdated(html)
+        }
+    }
+}
+
+// MARK: - WKScriptMessageHandler
+
+extension HTMLEditorView: WKScriptMessageHandler {
+
+    public func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
+        guard let msg = message.body as? String else { return }
+
+        if msg == "input" {
+            informContentDelegate()
+        }
     }
 }
 
