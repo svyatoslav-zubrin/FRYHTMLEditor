@@ -90,6 +90,34 @@ class ViewController: UIViewController {
 
         self.editor = editor
 
+        let css = "body {" +
+            "    margin: 0.0px 0.0px 0.0px 0.0px;" +
+            "    font-family: Avenir-Roman;" +
+            "    font-weight: normal;" +
+            "    font-style: normal;" +
+            "    font-size: 16.00px;" +
+            "    color: #696969;" +
+            "}" +
+            "h1,h2,h3,h4,h5,h6 {" +
+            "    font-family: Avenir-Black;" +
+            "    color: #4A4A4A;" +
+            "}" +
+            "h1 { font-size: 20.00px; }" +
+            "h2 { font-size: 18.68px; }" +
+            "h3 { font-size: 17.36px; }" +
+            "h4 { font-size: 16.00px; }" +
+            "h5 { font-size: 16.00px; }" +
+            "h6 { font-size: 16.00px; }" +
+            "tt,code,pre {" +
+            "    font-family: Menlo-Regular;" +
+            "    font-size: 14.00px;" +
+            "    background: #F3F3F3;" +
+            "}" +
+            "blockquote {" +
+            "    background: #F3F3F3;" +
+            "}"
+        self.editor.set(css: css)
+
         self.editor.toolbarDelegate = self
     }
 }
