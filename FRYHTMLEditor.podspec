@@ -18,7 +18,8 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+The basic HTML editor for iOS. Component is based on the WKWebView.
+Frankly speaking it's the rewritten to swift and simplified version of ZSSRichTextEditor. The functionality is currently limited to bold, italic, underline, both ordered and unordered lists and links.
                        DESC
 
   s.homepage         = 'https://github.com/svyatoslav-zubrin/FRYHTMLEditor'
