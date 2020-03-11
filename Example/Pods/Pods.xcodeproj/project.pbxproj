@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B198D72AC07E0F9AB8C73A8264D219A /* FRYHTMLEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BDAFA73B202A76927910EB15241EA607 /* FRYHTMLEditor-dummy.m */; };
+		0FF3DE1B2DA3DA129F912410CF4E4DD6 /* FRYHTMLEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 97BF67C956001D3FD81BA15EFB3D537B /* FRYHTMLEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		119A77C840C0C0717CFA382507CE6DCE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		20C2A45C715EE1ABF80A30D367A134D4 /* HTMLEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C763712884277F8AE68BA7D7D5B870 /* HTMLEditorView.swift */; };
 		2201B810431BD36E10F82C5B231ED97A /* Pods-FRYHTMLEditor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7993D2F0A16591DAD0481624031A414 /* Pods-FRYHTMLEditor_Example-dummy.m */; };
-		4C09D7F474BB6449E7D72220CD1327B1 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BAD0C729ABB42539F0F56273A8F880C /* ReplaceMe.swift */; };
-		5B9B71DBD252558EDD982E8ADA55469D /* FRYHTMLEditor-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8AB6D3FC2B23FC129738C5A6947BD6 /* FRYHTMLEditor-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C6E7A8FE17BA232BE0965D8B4448963 /* JSBeautifier.js in Resources */ = {isa = PBXBuildFile; fileRef = 48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */; };
 		87630412C9A204635EE2B8E3551E0334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		BEDC65F963F5BC4B43FA3AE281D35183 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		9B27C0FB5A1E6D94B2B68371048DE878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		A73D3310AB5A6A20A253A69E26119253 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */; };
+		AF0525377E4F8FD743534CE431C6619B /* IndependentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D2B70CCF819C457A2B8C53B64ED90 /* IndependentAlert.swift */; };
 		C23956636FC48078ECC0C4D1C2B1C9A0 /* Pods-FRYHTMLEditor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68365D36525287D35DD27266105DBE85 /* Pods-FRYHTMLEditor_Tests-dummy.m */; };
 		D53BB20E6BECAF2F03C903CD49224689 /* Pods-FRYHTMLEditor_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02A6AC724C5FC3CCD04FA66B5CA1152E /* Pods-FRYHTMLEditor_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCBE72E3AEFB313B36734716139FE197 /* FRYHTMLEditor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6D21D3D43571312A99C58871414BE5C /* FRYHTMLEditor-dummy.m */; };
+		EC69C2E6856CC8ABF4D60ECFB4060802 /* editor.html in Resources */ = {isa = PBXBuildFile; fileRef = 3D97ECD4612BCD773F6A78685C8F8B52 /* editor.html */; };
+		EFA73E98D87B71A0800EB232D2D8AF12 /* jQuery.js in Resources */ = {isa = PBXBuildFile; fileRef = 06702E6FB9E4109A788EBB2C94A2CA12 /* jQuery.js */; };
 		FA92C7A52D2A07F5562E3482CD923796 /* Pods-FRYHTMLEditor_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F9004169A4A6FD87BB1AD8C6071320E /* Pods-FRYHTMLEditor_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -39,25 +44,27 @@
 /* Begin PBXFileReference section */
 		0042E38BF24EEA93561C5297AA990624 /* Pods-FRYHTMLEditor_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FRYHTMLEditor_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		02A6AC724C5FC3CCD04FA66B5CA1152E /* Pods-FRYHTMLEditor_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FRYHTMLEditor_Tests-umbrella.h"; sourceTree = "<group>"; };
+		06702E6FB9E4109A788EBB2C94A2CA12 /* jQuery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jQuery.js; path = FRYHTMLEditor/Resources/jQuery.js; sourceTree = "<group>"; };
+		07B018486FC5C21FA0687D933742E1A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		0DC50252DE459B0461DE95EB28C44807 /* Pods-FRYHTMLEditor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1BAD0C729ABB42539F0F56273A8F880C /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaceMe.swift; path = FRYHTMLEditor/Classes/ReplaceMe.swift; sourceTree = "<group>"; };
-		1BDF9E11B0BD979120D67F8FD663F112 /* FRYHTMLEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FRYHTMLEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1C8AB6D3FC2B23FC129738C5A6947BD6 /* FRYHTMLEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-umbrella.h"; sourceTree = "<group>"; };
+		1B6D2B70CCF819C457A2B8C53B64ED90 /* IndependentAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndependentAlert.swift; sourceTree = "<group>"; };
 		2EFD5B409A40EDD7BFB30FBF68823666 /* Pods-FRYHTMLEditor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FRYHTMLEditor_Example.modulemap"; sourceTree = "<group>"; };
 		2F702AFCC6FBA972A65B4080B9B694A8 /* Pods-FRYHTMLEditor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Tests-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32742F34C39E4B42B989B8F99739F5F0 /* Pods-FRYHTMLEditor_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FRYHTMLEditor_Example-frameworks.sh"; sourceTree = "<group>"; };
+		3D97ECD4612BCD773F6A78685C8F8B52 /* editor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = editor.html; path = FRYHTMLEditor/Resources/editor.html; sourceTree = "<group>"; };
+		4278055DCBD4DB1903AE13B833B6F30B /* FRYHTMLEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FRYHTMLEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		437D39590480D6C59FF4B845781DA647 /* Pods-FRYHTMLEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		466B607DA0C65AE3C5E4A774735D2443 /* FRYHTMLEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FRYHTMLEditor-Info.plist"; sourceTree = "<group>"; };
-		46F0D5E7EC1AA6DA96A7B921C3963C34 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		4E85D074DA77A547188ADC19825A91B1 /* FRYHTMLEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-prefix.pch"; sourceTree = "<group>"; };
-		52E23FF7E385517350773469157780A4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */ = {isa = PBXFileReference; includeInIndex = 1; name = JSBeautifier.js; path = FRYHTMLEditor/Resources/JSBeautifier.js; sourceTree = "<group>"; };
+		50D50388A890D166C8D448D11F701528 /* FRYHTMLEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FRYHTMLEditor.xcconfig; sourceTree = "<group>"; };
 		55BE22CD07ACBDF6E94ED6E12C48DDF0 /* Pods-FRYHTMLEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		68365D36525287D35DD27266105DBE85 /* Pods-FRYHTMLEditor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FRYHTMLEditor_Tests-dummy.m"; sourceTree = "<group>"; };
 		6F9004169A4A6FD87BB1AD8C6071320E /* Pods-FRYHTMLEditor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FRYHTMLEditor_Example-umbrella.h"; sourceTree = "<group>"; };
-		7EC98B2B2A4D0296222C26152C47EB9C /* FRYHTMLEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FRYHTMLEditor.xcconfig; sourceTree = "<group>"; };
+		7FDAB209A4D20C452A962AB82607D1D6 /* FRYHTMLEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FRYHTMLEditor.modulemap; sourceTree = "<group>"; };
 		86F30FDA41732A565CB36A865B10581D /* Pods_FRYHTMLEditor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FRYHTMLEditor_Tests.framework; path = "Pods-FRYHTMLEditor_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A02090C38A9FBBB4AE055F4D96A2341 /* FRYHTMLEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-prefix.pch"; sourceTree = "<group>"; };
 		8A64FAA1DBA28ABD72761FC601EA73E4 /* Pods-FRYHTMLEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		97BF67C956001D3FD81BA15EFB3D537B /* FRYHTMLEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-umbrella.h"; sourceTree = "<group>"; };
 		9A1F51CE76777CC7D0EBD77964D64289 /* Pods-FRYHTMLEditor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Example-Info.plist"; sourceTree = "<group>"; };
 		9B5C44B926F1EAB8A70682439DEF9562 /* FRYHTMLEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FRYHTMLEditor.framework; path = FRYHTMLEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -65,10 +72,13 @@
 		B35F7E92682E95107ADB4E07093CBAE6 /* Pods_FRYHTMLEditor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FRYHTMLEditor_Example.framework; path = "Pods-FRYHTMLEditor_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7993D2F0A16591DAD0481624031A414 /* Pods-FRYHTMLEditor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FRYHTMLEditor_Example-dummy.m"; sourceTree = "<group>"; };
 		BA819A19536A5284A668EAD5F07A5EA1 /* Pods-FRYHTMLEditor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FRYHTMLEditor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BDAFA73B202A76927910EB15241EA607 /* FRYHTMLEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FRYHTMLEditor-dummy.m"; sourceTree = "<group>"; };
 		BFA1EA40E236587FCC268D34A4A1EF37 /* Pods-FRYHTMLEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
-		C6D21D3D43571312A99C58871414BE5C /* FRYHTMLEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FRYHTMLEditor-dummy.m"; sourceTree = "<group>"; };
+		D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ZSSRichTextEditor.js; path = FRYHTMLEditor/Resources/ZSSRichTextEditor.js; sourceTree = "<group>"; };
 		D393D6F2CE2919927A80F3EE00EE739F /* Pods-FRYHTMLEditor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F0DA968103EB8CDB8D330A5DC438934F /* FRYHTMLEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FRYHTMLEditor.modulemap; sourceTree = "<group>"; };
+		F2C763712884277F8AE68BA7D7D5B870 /* HTMLEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLEditorView.swift; path = FRYHTMLEditor/Classes/HTMLEditorView.swift; sourceTree = "<group>"; };
+		F6C37EBBBAF5EDDD5152B7106BAEF373 /* FRYHTMLEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FRYHTMLEditor-Info.plist"; sourceTree = "<group>"; };
+		F97E19C1DDC55FE313B9D5C6D50B5F68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,31 +98,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FDCCE9B350AB23182D38F77879CF3F55 /* Frameworks */ = {
+		FCDCF9629AE070FA9632A0438B53735A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEDC65F963F5BC4B43FA3AE281D35183 /* Foundation.framework in Frameworks */,
+				9B27C0FB5A1E6D94B2B68371048DE878 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0DDCA639FC3EB4777D3BB503D95806EB /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				F0DA968103EB8CDB8D330A5DC438934F /* FRYHTMLEditor.modulemap */,
-				7EC98B2B2A4D0296222C26152C47EB9C /* FRYHTMLEditor.xcconfig */,
-				C6D21D3D43571312A99C58871414BE5C /* FRYHTMLEditor-dummy.m */,
-				466B607DA0C65AE3C5E4A774735D2443 /* FRYHTMLEditor-Info.plist */,
-				4E85D074DA77A547188ADC19825A91B1 /* FRYHTMLEditor-prefix.pch */,
-				1C8AB6D3FC2B23FC129738C5A6947BD6 /* FRYHTMLEditor-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/FRYHTMLEditor";
-			sourceTree = "<group>";
-		};
 		1AE17ECF9B6E84B1D36D9A6B58C15259 /* Pods-FRYHTMLEditor_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +126,26 @@
 			path = "Target Support Files/Pods-FRYHTMLEditor_Example";
 			sourceTree = "<group>";
 		};
-		40163CAC1F677D918169796394B6E7FC /* Pod */ = {
+		2AAB8EFE3BA71E26F8F6BB201B537792 /* FRYHTMLEditor */ = {
 			isa = PBXGroup;
 			children = (
-				1BDF9E11B0BD979120D67F8FD663F112 /* FRYHTMLEditor.podspec */,
-				46F0D5E7EC1AA6DA96A7B921C3963C34 /* LICENSE */,
-				52E23FF7E385517350773469157780A4 /* README.md */,
+				F2C763712884277F8AE68BA7D7D5B870 /* HTMLEditorView.swift */,
+				673B65651226106C8AC457F4A974EC2A /* IndependentAlert */,
+				CFD8D0B38A09ED652D46EE84799FE29A /* Pod */,
+				BE104BB3B823DD2893B65B33053F3077 /* Resources */,
+				D382C8AF0AB067A192910C9AB8540A09 /* Support Files */,
 			);
-			name = Pod;
+			name = FRYHTMLEditor;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		673B65651226106C8AC457F4A974EC2A /* IndependentAlert */ = {
+			isa = PBXGroup;
+			children = (
+				1B6D2B70CCF819C457A2B8C53B64ED90 /* IndependentAlert.swift */,
+			);
+			name = IndependentAlert;
+			path = FRYHTMLEditor/Classes/IndependentAlert;
 			sourceTree = "<group>";
 		};
 		7E3DA27DED96A2F9F92E759F1C7D252A /* Products */ = {
@@ -166,15 +174,15 @@
 			path = "Target Support Files/Pods-FRYHTMLEditor_Tests";
 			sourceTree = "<group>";
 		};
-		A25D854BE1AA495AD35E693A34F02F40 /* FRYHTMLEditor */ = {
+		BE104BB3B823DD2893B65B33053F3077 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				1BAD0C729ABB42539F0F56273A8F880C /* ReplaceMe.swift */,
-				40163CAC1F677D918169796394B6E7FC /* Pod */,
-				0DDCA639FC3EB4777D3BB503D95806EB /* Support Files */,
+				3D97ECD4612BCD773F6A78685C8F8B52 /* editor.html */,
+				06702E6FB9E4109A788EBB2C94A2CA12 /* jQuery.js */,
+				48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */,
+				D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */,
 			);
-			name = FRYHTMLEditor;
-			path = ../..;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
@@ -183,14 +191,6 @@
 				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		C283A62CA31059E7CDC21ECA712B70E4 /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A25D854BE1AA495AD35E693A34F02F40 /* FRYHTMLEditor */,
-			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		CC8E6640D8E7E3BDC01606CEC6462560 /* Targets Support Files */ = {
@@ -206,11 +206,21 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				C283A62CA31059E7CDC21ECA712B70E4 /* Development Pods */,
+				D29929C6B78D8308F625658A479B5501 /* Development Pods */,
 				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
 				7E3DA27DED96A2F9F92E759F1C7D252A /* Products */,
 				CC8E6640D8E7E3BDC01606CEC6462560 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		CFD8D0B38A09ED652D46EE84799FE29A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4278055DCBD4DB1903AE13B833B6F30B /* FRYHTMLEditor.podspec */,
+				07B018486FC5C21FA0687D933742E1A2 /* LICENSE */,
+				F97E19C1DDC55FE313B9D5C6D50B5F68 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
@@ -221,22 +231,44 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D29929C6B78D8308F625658A479B5501 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AAB8EFE3BA71E26F8F6BB201B537792 /* FRYHTMLEditor */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D382C8AF0AB067A192910C9AB8540A09 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FDAB209A4D20C452A962AB82607D1D6 /* FRYHTMLEditor.modulemap */,
+				50D50388A890D166C8D448D11F701528 /* FRYHTMLEditor.xcconfig */,
+				BDAFA73B202A76927910EB15241EA607 /* FRYHTMLEditor-dummy.m */,
+				F6C37EBBBAF5EDDD5152B7106BAEF373 /* FRYHTMLEditor-Info.plist */,
+				8A02090C38A9FBBB4AE055F4D96A2341 /* FRYHTMLEditor-prefix.pch */,
+				97BF67C956001D3FD81BA15EFB3D537B /* FRYHTMLEditor-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FRYHTMLEditor";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		225EB551C5238D51E8569CB942DE147E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5B9B71DBD252558EDD982E8ADA55469D /* FRYHTMLEditor-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		47ADD8DA73B6567FD3E36C8AE0A297E6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D53BB20E6BECAF2F03C903CD49224689 /* Pods-FRYHTMLEditor_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F9E3FEBC8E7BE3BCDCDE274C9F5FFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0FF3DE1B2DA3DA129F912410CF4E4DD6 /* FRYHTMLEditor-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +323,12 @@
 		};
 		A45D1218E654D62DD0F5F31979D38580 /* FRYHTMLEditor */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3120BF2E0B1AA4F1511DD14818F1B09E /* Build configuration list for PBXNativeTarget "FRYHTMLEditor" */;
+			buildConfigurationList = EA53E9A8D56590D371C1DCA6CFEFDCB1 /* Build configuration list for PBXNativeTarget "FRYHTMLEditor" */;
 			buildPhases = (
-				225EB551C5238D51E8569CB942DE147E /* Headers */,
-				5101088EA006CC611EBA596AEF272EE5 /* Sources */,
-				FDCCE9B350AB23182D38F77879CF3F55 /* Frameworks */,
-				11CB38520DB12C9B8417BB936C072914 /* Resources */,
+				D9F9E3FEBC8E7BE3BCDCDE274C9F5FFA /* Headers */,
+				4907F74E0F3751C1E7C42E91B368D219 /* Sources */,
+				FCDCF9629AE070FA9632A0438B53735A /* Frameworks */,
+				E7D98D6862DC508A96A13B88C0449B5E /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,13 +369,6 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		11CB38520DB12C9B8417BB936C072914 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8DC3442B3FE884F9A177666C9209E884 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -358,6 +383,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E7D98D6862DC508A96A13B88C0449B5E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC69C2E6856CC8ABF4D60ECFB4060802 /* editor.html in Resources */,
+				EFA73E98D87B71A0800EB232D2D8AF12 /* jQuery.js in Resources */,
+				7C6E7A8FE17BA232BE0965D8B4448963 /* JSBeautifier.js in Resources */,
+				A73D3310AB5A6A20A253A69E26119253 /* ZSSRichTextEditor.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -369,12 +405,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5101088EA006CC611EBA596AEF272EE5 /* Sources */ = {
+		4907F74E0F3751C1E7C42E91B368D219 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCBE72E3AEFB313B36734716139FE197 /* FRYHTMLEditor-dummy.m in Sources */,
-				4C09D7F474BB6449E7D72220CD1327B1 /* ReplaceMe.swift in Sources */,
+				0B198D72AC07E0F9AB8C73A8264D219A /* FRYHTMLEditor-dummy.m in Sources */,
+				20C2A45C715EE1ABF80A30D367A134D4 /* HTMLEditorView.swift in Sources */,
+				AF0525377E4F8FD743534CE431C6619B /* IndependentAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,11 +441,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		91BA3C19DF2559242E8B99C6F1E55334 /* Release */ = {
+		16623FBF238C315B95BC533BBE7B596A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFA1EA40E236587FCC268D34A4A1EF37 /* Pods-FRYHTMLEditor_Example.release.xcconfig */;
+			baseConfigurationReference = 50D50388A890D166C8D448D11F701528 /* FRYHTMLEditor.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -418,19 +456,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor.modulemap";
+				PRODUCT_MODULE_NAME = FRYHTMLEditor;
+				PRODUCT_NAME = FRYHTMLEditor;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -438,73 +475,7 @@
 			};
 			name = Release;
 		};
-		95CB0C6A6D9807B7793BBD0DFFF49D9D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A64FAA1DBA28ABD72761FC601EA73E4 /* Pods-FRYHTMLEditor_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A3477A6119A46FD6C01116115B93AA89 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55BE22CD07ACBDF6E94ED6E12C48DDF0 /* Pods-FRYHTMLEditor_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B0087CB4594321EF41619F3181FE120E /* Release */ = {
+		257497152829C177993B5EC99C1D227A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -552,7 +523,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -564,7 +535,147 @@
 			};
 			name = Release;
 		};
-		B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */ = {
+		8C05AF81654B5FA26302EF5137CA0E8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A64FAA1DBA28ABD72761FC601EA73E4 /* Pods-FRYHTMLEditor_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A1C3AE2EA32A31A7B97B798014A9526C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50D50388A890D166C8D448D11F701528 /* FRYHTMLEditor.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor.modulemap";
+				PRODUCT_MODULE_NAME = FRYHTMLEditor;
+				PRODUCT_NAME = FRYHTMLEditor;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CAE288EC1B38A8470970B56527AAE62C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFA1EA40E236587FCC268D34A4A1EF37 /* Pods-FRYHTMLEditor_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CFFBBCF20BC20854FB7FC46E25E1FD44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 437D39590480D6C59FF4B845781DA647 /* Pods-FRYHTMLEditor_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD8F832993327D1DD8046C3CBCBD97CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -615,7 +726,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -628,43 +739,13 @@
 			};
 			name = Debug;
 		};
-		E8D11E222BFD7A4E170B850CCC679E6F /* Release */ = {
+		F8D9424E4244B1A53136FE069CA92FFF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EC98B2B2A4D0296222C26152C47EB9C /* FRYHTMLEditor.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor.modulemap";
-				PRODUCT_MODULE_NAME = FRYHTMLEditor;
-				PRODUCT_NAME = FRYHTMLEditor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EFF29C538BD56CBB8AC3484451E5B1F9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 437D39590480D6C59FF4B845781DA647 /* Pods-FRYHTMLEditor_Tests.release.xcconfig */;
+			baseConfigurationReference = 55BE22CD07ACBDF6E94ED6E12C48DDF0 /* Pods-FRYHTMLEditor_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -674,12 +755,12 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Tests/Pods-FRYHTMLEditor_Tests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FRYHTMLEditor_Example/Pods-FRYHTMLEditor_Example.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -687,38 +768,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F61337D5B14A75E2B98883A5F1CEF47E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EC98B2B2A4D0296222C26152C47EB9C /* FRYHTMLEditor.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/FRYHTMLEditor/FRYHTMLEditor.modulemap";
-				PRODUCT_MODULE_NAME = FRYHTMLEditor;
-				PRODUCT_NAME = FRYHTMLEditor;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -728,20 +777,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3120BF2E0B1AA4F1511DD14818F1B09E /* Build configuration list for PBXNativeTarget "FRYHTMLEditor" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F61337D5B14A75E2B98883A5F1CEF47E /* Debug */,
-				E8D11E222BFD7A4E170B850CCC679E6F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B8BCBD0110C2658BB5DAADB9B7D97B92 /* Debug */,
-				B0087CB4594321EF41619F3181FE120E /* Release */,
+				DD8F832993327D1DD8046C3CBCBD97CD /* Debug */,
+				257497152829C177993B5EC99C1D227A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -749,8 +789,8 @@
 		A60E4738BF102203F4A58DF73D33CAA2 /* Build configuration list for PBXNativeTarget "Pods-FRYHTMLEditor_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				95CB0C6A6D9807B7793BBD0DFFF49D9D /* Debug */,
-				EFF29C538BD56CBB8AC3484451E5B1F9 /* Release */,
+				8C05AF81654B5FA26302EF5137CA0E8D /* Debug */,
+				CFFBBCF20BC20854FB7FC46E25E1FD44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -758,8 +798,17 @@
 		B04D662621BAFE77D13C5EF1C000C603 /* Build configuration list for PBXNativeTarget "Pods-FRYHTMLEditor_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3477A6119A46FD6C01116115B93AA89 /* Debug */,
-				91BA3C19DF2559242E8B99C6F1E55334 /* Release */,
+				F8D9424E4244B1A53136FE069CA92FFF /* Debug */,
+				CAE288EC1B38A8470970B56527AAE62C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA53E9A8D56590D371C1DCA6CFEFDCB1 /* Build configuration list for PBXNativeTarget "FRYHTMLEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1C3AE2EA32A31A7B97B798014A9526C /* Debug */,
+				16623FBF238C315B95BC533BBE7B596A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

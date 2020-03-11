@@ -1,30 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="FRYHTMLEditor_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HTMLEditor" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3E-3h-Q1A">
+                                <rect key="frame" x="20" y="64" width="374" height="250"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koM-eq-wOJ">
+                                <rect key="frame" x="172.5" y="334" width="69" height="30"/>
+                                <state key="normal" title="Set HTML"/>
+                                <connections>
+                                    <action selector="insertHTML" destination="BYZ-38-t0r" eventType="touchUpInside" id="DcL-Hc-Usm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTN-lx-QrK">
+                                <rect key="frame" x="166.5" y="374" width="81" height="30"/>
+                                <state key="normal" title="Read HTML"/>
+                                <connections>
+                                    <action selector="readHTML" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHa-aF-ai8"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4z-wQ-hTC">
+                                <rect key="frame" x="0.0" y="404" width="414" height="44"/>
+                                <items>
+                                    <barButtonItem title="&lt;b&gt;" id="TpQ-OE-M2Q">
+                                        <connections>
+                                            <action selector="bbiTappedWithBbi:" destination="BYZ-38-t0r" id="lJF-8a-NSx"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&lt;i&gt;" id="Lnb-Td-6NB">
+                                        <connections>
+                                            <action selector="bbiTappedWithBbi:" destination="BYZ-38-t0r" id="QaI-z4-0FU"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&lt;u&gt;" id="Xov-XD-sYV">
+                                        <connections>
+                                            <action selector="bbiTappedWithBbi:" destination="BYZ-38-t0r" id="67B-Js-pf7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&lt;ol&gt;" id="kYe-xf-Nni">
+                                        <connections>
+                                            <action selector="bbiTappedWithBbi:" destination="BYZ-38-t0r" id="4Dv-Ok-PwA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&lt;ul&gt;" id="LC8-n3-RR9">
+                                        <connections>
+                                            <action selector="bbiTappedWithBbi:" destination="BYZ-38-t0r" id="Enf-0r-5Zu"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="&lt;a&gt;" id="BmL-Xh-wjz">
+                                        <connections>
+                                            <action selector="bbiTappedWithBbi:" destination="BYZ-38-t0r" id="XAU-MF-ckP"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-af-uyZ">
+                                <rect key="frame" x="20" y="448" width="374" height="414"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="w3E-3h-Q1A" firstAttribute="height" secondItem="fhO-af-uyZ" secondAttribute="height" multiplier="0.603865" id="3he-Nr-OkT"/>
+                            <constraint firstItem="w3E-3h-Q1A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Tr-SV-Sd3"/>
+                            <constraint firstItem="Q4z-wQ-hTC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7l7-yE-MQl"/>
+                            <constraint firstItem="fhO-af-uyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A6f-4Q-Fli"/>
+                            <constraint firstItem="Q4z-wQ-hTC" firstAttribute="top" secondItem="PTN-lx-QrK" secondAttribute="bottom" id="Iue-7r-fDl"/>
+                            <constraint firstItem="w3E-3h-Q1A" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Q3K-a3-0Yv"/>
+                            <constraint firstItem="PTN-lx-QrK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S96-MK-rIO"/>
+                            <constraint firstItem="fhO-af-uyZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="U1T-Nu-rez"/>
+                            <constraint firstItem="PTN-lx-QrK" firstAttribute="top" secondItem="koM-eq-wOJ" secondAttribute="bottom" constant="10" id="bhz-ze-dhJ"/>
+                            <constraint firstItem="koM-eq-wOJ" firstAttribute="top" secondItem="w3E-3h-Q1A" secondAttribute="bottom" constant="20" id="deX-bG-qff"/>
+                            <constraint firstItem="koM-eq-wOJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fwy-Jm-gJT"/>
+                            <constraint firstItem="Q4z-wQ-hTC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gZD-7s-QN3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w3E-3h-Q1A" secondAttribute="trailing" constant="20" id="kii-ii-xAw"/>
+                            <constraint firstItem="fhO-af-uyZ" firstAttribute="top" secondItem="Q4z-wQ-hTC" secondAttribute="bottom" id="uig-rT-jcH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fhO-af-uyZ" secondAttribute="trailing" constant="20" id="wbW-bF-Qph"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="boldBBI" destination="TpQ-OE-M2Q" id="zWv-bu-mbc"/>
+                        <outlet property="bulletListBBI" destination="LC8-n3-RR9" id="Snl-bl-urA"/>
+                        <outlet property="editorContainer" destination="w3E-3h-Q1A" id="Lu7-WW-Qvj"/>
+                        <outlet property="italicBBI" destination="Lnb-Td-6NB" id="v7h-T3-Xuj"/>
+                        <outlet property="linkBBI" destination="BmL-Xh-wjz" id="Wjq-nV-fvv"/>
+                        <outlet property="orderdListBBI" destination="kYe-xf-Nni" id="UAL-0e-sNA"/>
+                        <outlet property="textView" destination="fhO-af-uyZ" id="hr1-Tb-yOa"/>
+                        <outlet property="underlineBBI" destination="Xov-XD-sYV" id="jxv-sA-fuB"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
 </document>
