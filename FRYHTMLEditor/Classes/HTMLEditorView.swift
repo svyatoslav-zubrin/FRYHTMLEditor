@@ -9,8 +9,9 @@
 import UIKit
 import WebKit
 
-public protocol HTMLEditorContentDelegate: class {
-    func contentUpdated(_ html: String)
+@objc
+public protocol HTMLEditorContentDelegate {
+    @objc optional func contentUpdated(_ html: String)
 }
 
 public protocol HTMLEditorToolbarDelegate: class {
@@ -423,7 +424,7 @@ public class HTMLEditorView: UIView {
 
         fetchHTML { (result) in
             guard case let .success(html) = result else { return }
-            contentDelegate.contentUpdated(html)
+            contentDelegate.contentUpdated?(html)
         }
     }
 }
