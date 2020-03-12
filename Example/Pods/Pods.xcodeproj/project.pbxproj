@@ -14,6 +14,7 @@
 		2201B810431BD36E10F82C5B231ED97A /* Pods-FRYHTMLEditor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7993D2F0A16591DAD0481624031A414 /* Pods-FRYHTMLEditor_Example-dummy.m */; };
 		7C6E7A8FE17BA232BE0965D8B4448963 /* JSBeautifier.js in Resources */ = {isa = PBXBuildFile; fileRef = 48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */; };
 		87630412C9A204635EE2B8E3551E0334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		8D22E9EF241A3F9A00887BDA /* FRYWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D22E9EE241A3F9A00887BDA /* FRYWebView.swift */; };
 		9B27C0FB5A1E6D94B2B68371048DE878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A73D3310AB5A6A20A253A69E26119253 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */; };
 		AF0525377E4F8FD743534CE431C6619B /* IndependentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D2B70CCF819C457A2B8C53B64ED90 /* IndependentAlert.swift */; };
@@ -44,41 +45,42 @@
 /* Begin PBXFileReference section */
 		0042E38BF24EEA93561C5297AA990624 /* Pods-FRYHTMLEditor_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FRYHTMLEditor_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		02A6AC724C5FC3CCD04FA66B5CA1152E /* Pods-FRYHTMLEditor_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FRYHTMLEditor_Tests-umbrella.h"; sourceTree = "<group>"; };
-		06702E6FB9E4109A788EBB2C94A2CA12 /* jQuery.js */ = {isa = PBXFileReference; includeInIndex = 1; name = jQuery.js; path = FRYHTMLEditor/Resources/jQuery.js; sourceTree = "<group>"; };
-		07B018486FC5C21FA0687D933742E1A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		06702E6FB9E4109A788EBB2C94A2CA12 /* jQuery.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = jQuery.js; path = FRYHTMLEditor/Resources/jQuery.js; sourceTree = "<group>"; };
+		07B018486FC5C21FA0687D933742E1A2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		0DC50252DE459B0461DE95EB28C44807 /* Pods-FRYHTMLEditor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1B6D2B70CCF819C457A2B8C53B64ED90 /* IndependentAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IndependentAlert.swift; sourceTree = "<group>"; };
 		2EFD5B409A40EDD7BFB30FBF68823666 /* Pods-FRYHTMLEditor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FRYHTMLEditor_Example.modulemap"; sourceTree = "<group>"; };
 		2F702AFCC6FBA972A65B4080B9B694A8 /* Pods-FRYHTMLEditor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Tests-Info.plist"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		32742F34C39E4B42B989B8F99739F5F0 /* Pods-FRYHTMLEditor_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FRYHTMLEditor_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3D97ECD4612BCD773F6A78685C8F8B52 /* editor.html */ = {isa = PBXFileReference; includeInIndex = 1; name = editor.html; path = FRYHTMLEditor/Resources/editor.html; sourceTree = "<group>"; };
-		4278055DCBD4DB1903AE13B833B6F30B /* FRYHTMLEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FRYHTMLEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3D97ECD4612BCD773F6A78685C8F8B52 /* editor.html */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.html; name = editor.html; path = FRYHTMLEditor/Resources/editor.html; sourceTree = "<group>"; };
+		4278055DCBD4DB1903AE13B833B6F30B /* FRYHTMLEditor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FRYHTMLEditor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		437D39590480D6C59FF4B845781DA647 /* Pods-FRYHTMLEditor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */ = {isa = PBXFileReference; includeInIndex = 1; name = JSBeautifier.js; path = FRYHTMLEditor/Resources/JSBeautifier.js; sourceTree = "<group>"; };
+		48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = JSBeautifier.js; path = FRYHTMLEditor/Resources/JSBeautifier.js; sourceTree = "<group>"; };
 		50D50388A890D166C8D448D11F701528 /* FRYHTMLEditor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FRYHTMLEditor.xcconfig; sourceTree = "<group>"; };
 		55BE22CD07ACBDF6E94ED6E12C48DDF0 /* Pods-FRYHTMLEditor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		68365D36525287D35DD27266105DBE85 /* Pods-FRYHTMLEditor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FRYHTMLEditor_Tests-dummy.m"; sourceTree = "<group>"; };
 		6F9004169A4A6FD87BB1AD8C6071320E /* Pods-FRYHTMLEditor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FRYHTMLEditor_Example-umbrella.h"; sourceTree = "<group>"; };
 		7FDAB209A4D20C452A962AB82607D1D6 /* FRYHTMLEditor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FRYHTMLEditor.modulemap; sourceTree = "<group>"; };
-		86F30FDA41732A565CB36A865B10581D /* Pods_FRYHTMLEditor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FRYHTMLEditor_Tests.framework; path = "Pods-FRYHTMLEditor_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F30FDA41732A565CB36A865B10581D /* Pods_FRYHTMLEditor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRYHTMLEditor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A02090C38A9FBBB4AE055F4D96A2341 /* FRYHTMLEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-prefix.pch"; sourceTree = "<group>"; };
 		8A64FAA1DBA28ABD72761FC601EA73E4 /* Pods-FRYHTMLEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D22E9EE241A3F9A00887BDA /* FRYWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRYWebView.swift; sourceTree = "<group>"; };
 		97BF67C956001D3FD81BA15EFB3D537B /* FRYHTMLEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-umbrella.h"; sourceTree = "<group>"; };
 		9A1F51CE76777CC7D0EBD77964D64289 /* Pods-FRYHTMLEditor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Example-Info.plist"; sourceTree = "<group>"; };
-		9B5C44B926F1EAB8A70682439DEF9562 /* FRYHTMLEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FRYHTMLEditor.framework; path = FRYHTMLEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B5C44B926F1EAB8A70682439DEF9562 /* FRYHTMLEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRYHTMLEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7B83407D33A503285A05482F0E2DDD3 /* Pods-FRYHTMLEditor_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FRYHTMLEditor_Tests.modulemap"; sourceTree = "<group>"; };
-		B35F7E92682E95107ADB4E07093CBAE6 /* Pods_FRYHTMLEditor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FRYHTMLEditor_Example.framework; path = "Pods-FRYHTMLEditor_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B35F7E92682E95107ADB4E07093CBAE6 /* Pods_FRYHTMLEditor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRYHTMLEditor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7993D2F0A16591DAD0481624031A414 /* Pods-FRYHTMLEditor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FRYHTMLEditor_Example-dummy.m"; sourceTree = "<group>"; };
 		BA819A19536A5284A668EAD5F07A5EA1 /* Pods-FRYHTMLEditor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FRYHTMLEditor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BDAFA73B202A76927910EB15241EA607 /* FRYHTMLEditor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FRYHTMLEditor-dummy.m"; sourceTree = "<group>"; };
 		BFA1EA40E236587FCC268D34A4A1EF37 /* Pods-FRYHTMLEditor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Example.release.xcconfig"; sourceTree = "<group>"; };
-		D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */ = {isa = PBXFileReference; includeInIndex = 1; name = ZSSRichTextEditor.js; path = FRYHTMLEditor/Resources/ZSSRichTextEditor.js; sourceTree = "<group>"; };
+		D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.javascript; name = ZSSRichTextEditor.js; path = FRYHTMLEditor/Resources/ZSSRichTextEditor.js; sourceTree = "<group>"; };
 		D393D6F2CE2919927A80F3EE00EE739F /* Pods-FRYHTMLEditor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		F2C763712884277F8AE68BA7D7D5B870 /* HTMLEditorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTMLEditorView.swift; path = FRYHTMLEditor/Classes/HTMLEditorView.swift; sourceTree = "<group>"; };
 		F6C37EBBBAF5EDDD5152B7106BAEF373 /* FRYHTMLEditor-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FRYHTMLEditor-Info.plist"; sourceTree = "<group>"; };
-		F97E19C1DDC55FE313B9D5C6D50B5F68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		F97E19C1DDC55FE313B9D5C6D50B5F68 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C763712884277F8AE68BA7D7D5B870 /* HTMLEditorView.swift */,
+				8D22E9EE241A3F9A00887BDA /* FRYWebView.swift */,
 				673B65651226106C8AC457F4A974EC2A /* IndependentAlert */,
 				CFD8D0B38A09ED652D46EE84799FE29A /* Pod */,
 				BE104BB3B823DD2893B65B33053F3077 /* Resources */,
@@ -410,6 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B198D72AC07E0F9AB8C73A8264D219A /* FRYHTMLEditor-dummy.m in Sources */,
+				8D22E9EF241A3F9A00887BDA /* FRYWebView.swift in Sources */,
 				20C2A45C715EE1ABF80A30D367A134D4 /* HTMLEditorView.swift in Sources */,
 				AF0525377E4F8FD743534CE431C6619B /* IndependentAlert.swift in Sources */,
 			);
@@ -528,8 +532,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

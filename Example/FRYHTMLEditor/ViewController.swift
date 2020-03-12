@@ -118,8 +118,21 @@ class ViewController: UIViewController {
             "}"
         self.editor.set(css: css)
 
+        self.editor.setInputAccessoryView(constructToolbar())
+
         self.editor.toolbarDelegate = self
         self.editor.delegate = self
+    }
+
+    private func constructToolbar() -> UIToolbar {
+        let toolbar = UIToolbar()
+        let boldItem = UIBarButtonItem(title: "Bold", style: .plain, target: self, action: #selector(boldTapped))
+        toolbar.setItems([boldItem], animated: false)
+        return toolbar
+    }
+
+    @objc func boldTapped() {
+        print("Bold tapped")
     }
 }
 

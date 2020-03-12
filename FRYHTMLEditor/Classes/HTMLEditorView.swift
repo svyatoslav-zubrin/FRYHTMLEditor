@@ -60,7 +60,7 @@ public class HTMLEditorView: UIView {
     private var selectedLinkTitle: String?
     private var selectedLinkURLString: String?
 
-    private lazy var webView: WKWebView = {
+    private lazy var webView: WKWebView & FRYWebViewWithInputAccessory = {
         let config = WKWebViewConfiguration()
         config.dataDetectorTypes = []
 
@@ -71,7 +71,12 @@ public class HTMLEditorView: UIView {
         contentController.addUserScript(script)
         config.userContentController = contentController
 
-        let wv = WKWebView(frame: .zero, configuration: config)
+        let wv: WKWebView & FRYWebViewWithInputAccessory
+        if #available(iOS 13, *) {
+            wv = FRYWebView(frame: .zero, configuration: config)
+        } else {
+            wv = FRYWebViewObsolete(frame: .zero, configuration: config)
+        }
         wv.navigationDelegate = self
         wv.scrollView.bounces = true
         wv.backgroundColor = .white
@@ -100,6 +105,14 @@ public class HTMLEditorView: UIView {
     }
 
     // MARK: - Public
+
+    public func setInputAccessoryView(_ toolbar: UIToolbar) {
+        toolbar.translatesAutoresizingMaskIntoConstraints = false
+        toolbar.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        toolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
+
+        webView.addInputAccessoryView(toolbar: toolbar)
+    }
 
     public func set(css: String) {
         customCSS = css
