@@ -14,7 +14,7 @@
 		2201B810431BD36E10F82C5B231ED97A /* Pods-FRYHTMLEditor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7993D2F0A16591DAD0481624031A414 /* Pods-FRYHTMLEditor_Example-dummy.m */; };
 		7C6E7A8FE17BA232BE0965D8B4448963 /* JSBeautifier.js in Resources */ = {isa = PBXBuildFile; fileRef = 48E7791EDBCD96A8104DABE2AB4C5009 /* JSBeautifier.js */; };
 		87630412C9A204635EE2B8E3551E0334 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		8D22E9EF241A3F9A00887BDA /* FRYWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D22E9EE241A3F9A00887BDA /* FRYWebView.swift */; };
+		8D4DD451241A7361004103AD /* FRYWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4DD450241A7361004103AD /* FRYWebView.swift */; };
 		9B27C0FB5A1E6D94B2B68371048DE878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		A73D3310AB5A6A20A253A69E26119253 /* ZSSRichTextEditor.js in Resources */ = {isa = PBXBuildFile; fileRef = D093EF77C220E085672DB1685DFBF6D5 /* ZSSRichTextEditor.js */; };
 		AF0525377E4F8FD743534CE431C6619B /* IndependentAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B6D2B70CCF819C457A2B8C53B64ED90 /* IndependentAlert.swift */; };
@@ -65,7 +65,7 @@
 		86F30FDA41732A565CB36A865B10581D /* Pods_FRYHTMLEditor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRYHTMLEditor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A02090C38A9FBBB4AE055F4D96A2341 /* FRYHTMLEditor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-prefix.pch"; sourceTree = "<group>"; };
 		8A64FAA1DBA28ABD72761FC601EA73E4 /* Pods-FRYHTMLEditor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FRYHTMLEditor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		8D22E9EE241A3F9A00887BDA /* FRYWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRYWebView.swift; sourceTree = "<group>"; };
+		8D4DD450241A7361004103AD /* FRYWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FRYWebView.swift; path = FRYHTMLEditor/Classes/FRYWebView.swift; sourceTree = "<group>"; };
 		97BF67C956001D3FD81BA15EFB3D537B /* FRYHTMLEditor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FRYHTMLEditor-umbrella.h"; sourceTree = "<group>"; };
 		9A1F51CE76777CC7D0EBD77964D64289 /* Pods-FRYHTMLEditor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FRYHTMLEditor_Example-Info.plist"; sourceTree = "<group>"; };
 		9B5C44B926F1EAB8A70682439DEF9562 /* FRYHTMLEditor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FRYHTMLEditor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,7 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				F2C763712884277F8AE68BA7D7D5B870 /* HTMLEditorView.swift */,
-				8D22E9EE241A3F9A00887BDA /* FRYWebView.swift */,
+				8D4DD450241A7361004103AD /* FRYWebView.swift */,
 				673B65651226106C8AC457F4A974EC2A /* IndependentAlert */,
 				CFD8D0B38A09ED652D46EE84799FE29A /* Pod */,
 				BE104BB3B823DD2893B65B33053F3077 /* Resources */,
@@ -413,7 +413,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B198D72AC07E0F9AB8C73A8264D219A /* FRYHTMLEditor-dummy.m in Sources */,
-				8D22E9EF241A3F9A00887BDA /* FRYWebView.swift in Sources */,
+				8D4DD451241A7361004103AD /* FRYWebView.swift in Sources */,
 				20C2A45C715EE1ABF80A30D367A134D4 /* HTMLEditorView.swift in Sources */,
 				AF0525377E4F8FD743534CE431C6619B /* IndependentAlert.swift in Sources */,
 			);
