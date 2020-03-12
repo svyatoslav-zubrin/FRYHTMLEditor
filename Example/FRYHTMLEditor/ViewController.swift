@@ -119,7 +119,7 @@ class ViewController: UIViewController {
         self.editor.set(css: css)
 
         self.editor.toolbarDelegate = self
-        self.editor.contentDelegate = self
+        self.editor.delegate = self
     }
 }
 

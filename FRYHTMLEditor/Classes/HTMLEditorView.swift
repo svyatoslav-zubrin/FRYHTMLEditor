@@ -20,7 +20,7 @@ public protocol HTMLEditorToolbarDelegate: class {
 
 public class HTMLEditorView: UIView {
 
-    public weak var contentDelegate: HTMLEditorContentDelegate? = nil
+    public weak var delegate: HTMLEditorContentDelegate? = nil
     public weak var toolbarDelegate: HTMLEditorToolbarDelegate? = nil
 
     public enum HTMLEditorError: Error {
@@ -420,7 +420,7 @@ public class HTMLEditorView: UIView {
     // MARK: Helpers
 
     private func informContentDelegate() {
-        guard let contentDelegate = contentDelegate else { return }
+        guard let contentDelegate = delegate else { return }
 
         fetchHTML { (result) in
             guard case let .success(html) = result else { return }
