@@ -107,10 +107,6 @@ public class HTMLEditorView: UIView {
     // MARK: - Public
 
     public func setInputAccessoryView(_ toolbar: UIToolbar) {
-        toolbar.translatesAutoresizingMaskIntoConstraints = false
-        toolbar.widthAnchor.constraint(equalToConstant: 100).isActive = true
-        toolbar.heightAnchor.constraint(equalToConstant: 44).isActive = true
-
         webView.addInputAccessoryView(toolbar: toolbar)
     }
 
