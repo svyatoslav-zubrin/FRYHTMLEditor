@@ -11,31 +11,31 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HTMLEditor" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FRYHTMLEditor_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3E-3h-Q1A">
-                                <rect key="frame" x="20" y="64" width="374" height="250"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <rect key="frame" x="20" y="64" width="374" height="60.5"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koM-eq-wOJ">
-                                <rect key="frame" x="172.5" y="334" width="69" height="30"/>
+                                <rect key="frame" x="172.5" y="144.5" width="69" height="30"/>
                                 <state key="normal" title="Set HTML"/>
                                 <connections>
                                     <action selector="insertHTML" destination="BYZ-38-t0r" eventType="touchUpInside" id="DcL-Hc-Usm"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PTN-lx-QrK">
-                                <rect key="frame" x="166.5" y="374" width="81" height="30"/>
+                                <rect key="frame" x="166.5" y="184.5" width="81" height="30"/>
                                 <state key="normal" title="Read HTML"/>
                                 <connections>
                                     <action selector="readHTML" destination="BYZ-38-t0r" eventType="touchUpInside" id="gHa-aF-ai8"/>
                                 </connections>
                             </button>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q4z-wQ-hTC">
-                                <rect key="frame" x="0.0" y="404" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="214.5" width="414" height="44"/>
                                 <items>
                                     <barButtonItem title="&lt;b&gt;" id="TpQ-OE-M2Q">
                                         <connections>
@@ -70,7 +70,7 @@
                                 </items>
                             </toolbar>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fhO-af-uyZ">
-                                <rect key="frame" x="20" y="448" width="374" height="414"/>
+                                <rect key="frame" x="20" y="258.5" width="374" height="603.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -79,7 +79,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="w3E-3h-Q1A" firstAttribute="height" secondItem="fhO-af-uyZ" secondAttribute="height" multiplier="0.603865" id="3he-Nr-OkT"/>
+                            <constraint firstItem="w3E-3h-Q1A" firstAttribute="height" secondItem="fhO-af-uyZ" secondAttribute="height" multiplier="0.1" id="3he-Nr-OkT"/>
                             <constraint firstItem="w3E-3h-Q1A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Tr-SV-Sd3"/>
                             <constraint firstItem="Q4z-wQ-hTC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="7l7-yE-MQl"/>
                             <constraint firstItem="fhO-af-uyZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="A6f-4Q-Fli"/>
