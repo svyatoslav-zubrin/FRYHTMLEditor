@@ -80,6 +80,8 @@ class ViewController: UIViewController {
         editor.layer.borderColor = UIColor.red.cgColor
         editor.layer.borderWidth = 1
 
+        editor.setVerticalScrollIndicatorInsets(UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0))
+
         editorContainer.addSubview(editor)
 
         editor.translatesAutoresizingMaskIntoConstraints = false

@@ -106,6 +106,17 @@ public class HTMLEditorView: UIView {
 
     // MARK: - Public
 
+    public func setVerticalScrollIndicatorInsets(_ insets: UIEdgeInsets) {
+        if #available(iOS 11.1, *) {
+            webView.scrollView.verticalScrollIndicatorInsets = insets
+        } else {
+            webView.scrollView.scrollIndicatorInsets = UIEdgeInsets(top: insets.top,
+                                                               left: 0,
+                                                               bottom: insets.bottom,
+                                                               right: 0)
+        }
+    }
+
     public func setInputAccessoryView(_ toolbar: UIToolbar) {
         webView.addInputAccessoryView(toolbar: toolbar)
     }
