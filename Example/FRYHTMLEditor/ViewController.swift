@@ -81,6 +81,7 @@ class ViewController: UIViewController {
         editor.layer.borderWidth = 1
 
         editor.setVerticalScrollIndicatorInsets(UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0))
+        editor.set(placeholder: "Type here...")
 
         editorContainer.addSubview(editor)
 

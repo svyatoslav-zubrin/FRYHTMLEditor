@@ -51,6 +51,7 @@ public class HTMLEditorView: UIView {
 
     private var customCSS: String?
     private var internalHTML: String?
+    private var placeholder: String?
 
     // setup state
     private var isResourcesLoaded = false
@@ -135,6 +136,14 @@ public class HTMLEditorView: UIView {
         internalHTML = html
         if isEditorLoaded {
             updateHTML()
+        }
+    }
+
+    public func set(placeholder: String) {
+        self.placeholder = placeholder
+
+        if isEditorLoaded {
+            updatePlaceholder()
         }
     }
 
@@ -239,7 +248,7 @@ public class HTMLEditorView: UIView {
     // MARK: - Private
     // MARK: Setup
 
-    private func loadResources() {
+    private func loadResources(placeholder: String? = nil) {
         let bundle = Bundle(for: HTMLEditorView.self)
 
         guard let editorPath = bundle.path(forResource: "editor", ofType: "html"),
@@ -289,6 +298,13 @@ public class HTMLEditorView: UIView {
         webView.evaluateJavaScript(js) { [weak self] (_, _) in
             self?.informContentDelegate()
         }
+    }
+
+    private func updatePlaceholder() {
+        guard let placeholder = placeholder else { return }
+
+        let js = "zss_editor.setPlaceholder(\"\(placeholder)\");"
+        webView.evaluateJavaScript(js, completionHandler: nil)
     }
 
     // MARK: Link-related routines
@@ -498,6 +514,10 @@ extension HTMLEditorView: WKNavigationDelegate {
 
         if let _ = customCSS {
             updateCSS()
+        }
+
+        if let _ = placeholder {
+            updatePlaceholder()
         }
 
         let inputListener = "document.getElementById('zss_editor_content').addEventListener('input', function() {window.webkit.messageHandlers.jsm.postMessage('input');});";
