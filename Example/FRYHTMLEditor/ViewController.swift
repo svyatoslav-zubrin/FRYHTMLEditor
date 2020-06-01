@@ -118,6 +118,9 @@ class ViewController: UIViewController {
             "}" +
             "blockquote {" +
             "    background: #F3F3F3;" +
+            "}" +
+            "[placeholder]:empty:before {" +
+            "    color: red;" +
             "}"
         self.editor.set(css: css)
 

@@ -596,7 +596,7 @@ zss_editor.blurEditor = function() {
 }
 
 zss_editor.setCustomCSS = function(customCSS) {
-    document.getElementsByTagName('style')[0].innerHTML=customCSS;
+    document.getElementsByTagName('style')[1].innerHTML=customCSS;
     
     //set focus
     /*editor.focusout(function(){

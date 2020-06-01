@@ -248,7 +248,7 @@ public class HTMLEditorView: UIView {
     // MARK: - Private
     // MARK: Setup
 
-    private func loadResources(placeholder: String? = nil) {
+    private func loadResources() {
         let bundle = Bundle(for: HTMLEditorView.self)
 
         guard let editorPath = bundle.path(forResource: "editor", ofType: "html"),
