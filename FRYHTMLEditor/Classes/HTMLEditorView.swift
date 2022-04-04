@@ -14,7 +14,7 @@ public protocol HTMLEditorContentDelegate {
     @objc optional func contentUpdated(_ html: String)
 }
 
-public protocol HTMLEditorToolbarDelegate: class {
+public protocol HTMLEditorToolbarDelegate: AnyObject {
     func selectedTagsUpdated(_ tags: [HTMLEditorView.Tag])
 }
 
@@ -73,11 +73,7 @@ public class HTMLEditorView: UIView {
         config.userContentController = contentController
 
         let wv: WKWebView & FRYWebViewWithInputAccessory
-        if #available(iOS 13, *) {
-            wv = FRYWebView(frame: .zero, configuration: config)
-        } else {
-            wv = FRYWebViewObsolete(frame: .zero, configuration: config)
-        }
+        wv = FRYWebView(frame: .zero, configuration: config)
         wv.navigationDelegate = self
         wv.scrollView.bounces = true
         wv.backgroundColor = .white

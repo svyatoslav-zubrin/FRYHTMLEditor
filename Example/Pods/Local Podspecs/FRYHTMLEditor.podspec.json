@@ -16,12 +16,12 @@
     "tag": "0.1.0"
   },
   "platforms": {
-    "ios": "11.0"
+    "ios": "13.0"
   },
-  "swift_versions": "5.0",
+  "swift_versions": "5.5",
   "source_files": "FRYHTMLEditor/Classes/**/*",
   "resources": [
     "FRYHTMLEditor/Resources/*"
   ],
-  "swift_version": "5.0"
+  "swift_version": "5.5"
 }

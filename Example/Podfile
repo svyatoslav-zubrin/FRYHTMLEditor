@@ -1,4 +1,4 @@
-platform :ios, '11.0'
+platform :ios, '13.0'
 use_frameworks!
 
 target 'FRYHTMLEditor_Example' do
@@ -6,7 +6,5 @@ target 'FRYHTMLEditor_Example' do
 
   target 'FRYHTMLEditor_Tests' do
     inherit! :search_paths
-
-    
   end
 end
