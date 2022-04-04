@@ -1,6 +1,6 @@
 {
   "name": "FRYHTMLEditor",
-  "version": "0.1.0",
+  "version": "0.1.3",
   "summary": "A short description of FRYHTMLEditor.",
   "description": "The basic HTML editor for iOS. Component is based on the WKWebView.\nFrankly speaking it's the rewritten to swift and simplified version of ZSSRichTextEditor. The functionality is currently limited to bold, italic, underline, both ordered and unordered lists and links.",
   "homepage": "https://github.com/svyatoslav-zubrin/FRYHTMLEditor",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/svyatoslav-zubrin/FRYHTMLEditor.git",
-    "tag": "0.1.0"
+    "tag": "0.1.3"
   },
   "platforms": {
     "ios": "13.0"
