@@ -245,7 +245,7 @@ public class HTMLEditorView: UIView {
     // MARK: Setup
 
     private func loadResources() {
-        let bundle = Bundle(for: HTMLEditorView.self)
+        let bundle = Bundle.module
 
         guard let editorPath = bundle.path(forResource: "editor", ofType: "html"),
             let editorData = try? Data(contentsOf: URL(fileURLWithPath: editorPath)),

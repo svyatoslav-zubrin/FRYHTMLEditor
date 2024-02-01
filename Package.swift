@@ -17,7 +17,7 @@ let package = Package(
         .target(
             name: "FRYHTMLEditor",
             sources: ["Classes"],
-            resources: [.copy("Resources")]),
+            resources: [.process("Resources")]),
         .testTarget(
             name: "FRYHTMLEditorTests",
             dependencies: ["FRYHTMLEditor"]),
