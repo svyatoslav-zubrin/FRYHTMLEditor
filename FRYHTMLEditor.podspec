@@ -27,18 +27,10 @@ Frankly speaking it's the rewritten to swift and simplified version of ZSSRichTe
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'svyatoslav-zubrin' => 'szubrin79@gmail.com' }
   s.source           = { :git => 'https://github.com/svyatoslav-zubrin/FRYHTMLEditor.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '13.0'
+  s.ios.deployment_target = '14.0'
   s.swift_version = '5.5'
 
-  s.source_files = 'FRYHTMLEditor/Classes/**/*'
-  s.resources = ['FRYHTMLEditor/Resources/*']
-  # s.resource_bundles = {
-  #   'FRYHTMLEditor' => ['FRYHTMLEditor/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.source_files = 'Sources/FRYHTMLEditor/Classes/**/*'
+  s.resources = ['Sources/FRYHTMLEditor/Resources/*']
 end
